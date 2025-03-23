@@ -18,8 +18,7 @@ TODO:
 - [x] 调用MinerU进行pdf解析
 - [x] 调用qwen2.5-vl进行图片解析
 - [x] pandoc转换markdown成pdf/word
-- [x] 1、2
 - [x] markdown转换word/pdf
 - [ ] 单例测试
-- [ ] docker 镜像
-
+- [ ] docker 镜像测试
+- [ ] gradio app

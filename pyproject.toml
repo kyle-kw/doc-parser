@@ -17,3 +17,9 @@ dependencies = [
     "qwen-vl-utils>=0.0.10",
     "torchvision>=0.21.0",
 ]
+
+[dependency-groups]
+dev = [
+    "gradio>=5.22.0",
+    "gradio-pdf>=0.0.22",
+]
