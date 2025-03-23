@@ -1,0 +1,19 @@
+services:
+  mineru-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mineru-api
+    command: /bin/bash -c "source /opt/mineru_venv/bin/activate && exec uvicorn app:app --host 0.0.0.0 --port 8000"
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./output:/app/output
+      - magic-pdf.json:/root/magic-pdf.json
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]

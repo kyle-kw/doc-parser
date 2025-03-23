@@ -1,0 +1,5 @@
+.venv
+mineru-api
+test
+.env
+__pycache__
